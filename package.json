@@ -4,9 +4,9 @@
   "description": "A project management application with task management capabilities.",
   "main": "src/server/server.js",
   "scripts": {
-    "start": "node src/server/server.js",
-    "dev": "nodemon src/server/server.js",
-    "build": "tsc"
+    "start": "nodemon --exec ts-node src/server/server.ts",
+    "build": "tsc",
+    "serve": "node dist/server/server.js"
   },
   "dependencies": {
     "express": "^4.17.1",
